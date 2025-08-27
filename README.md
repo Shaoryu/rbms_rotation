@@ -71,7 +71,7 @@ int main(){
 void motor_deg_control(){
     m2006.deg_control(set_deg, motor); // マルチスレッドで書く必要がある
 }
-```
+
 void can_receive(){
     m2006.can_read(); // canは常に受信させておく
     //co+=1;
@@ -81,3 +81,4 @@ void onReceive() {
     queue.call(can_receive); // EventQueueにCANreceive関数を登録
 }
 
+```
